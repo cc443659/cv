@@ -1,0 +1,42 @@
+:root {
+    --font-family: "Trebuchet MS";
+    --bg-image: url("bg.jpg");
+    --h1-font-size: calc(1.4rem + 2.1vw);
+    --text-font-size: calc(0.7rem + 1.4vw);
+    --h1-colour: #f0f8ff;
+    --text-colour: #707579;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: cadetblue;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    color: var(--h1-colour);
+    background-color: rgba(20, 20, 22, 0.9);
+}
+
+section {
+    background-color: rgb(15, 15, 16);
+    margin: 6%;
+    font-size: var(--text-font-size);
+    color: var(--text-colour);
+}
+
+div:has(img) {
+    display: inline-flex;
+}
+
+img {
+    width: calc(1rem + 125px);
+    height: calc(1rem + 125px);
+    aspect-ratio: 1 / 1;
+    border-color: black;
+    border-width: thick;
+    border-style: groove;
+}
